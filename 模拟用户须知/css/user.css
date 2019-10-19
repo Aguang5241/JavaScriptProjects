@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+#info {
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  height: 500px;
+  text-indent: 2em;
+  text-align: left;
+  background-color: #eee;
+  overflow: auto;
+}
+input {
+  margin: 5px;
+  padding: 5px;
+}
