@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/operate.css">
+  <script src="js/operate.js" type="text/javascript" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="outer">
+    <table id="content">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Salary</th>
+        <th>Operate</th>
+      </tr>
+      <tr>
+        <td>张三</td>
+        <td>zhangsan@mail.com</td>
+        <td>5000</td>
+        <td><a href="deleteEmp?id=001">Delete</a></td>
+      </tr>
+      <tr>
+        <td>李四</td>
+        <td>lisi@mail.com</td>
+        <td>6000</td>
+        <td><a href="deleteEmp?id=002">Delete</a></td>
+      </tr>
+      <tr>
+        <td>王麻</td>
+        <td>wangma@mail.com</td>
+        <td>7000</td>
+        <td><a href="deleteEmp?id=003">Delete</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="inputBox">
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td>
+          <input type="text" id="name">
+        </td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td>
+          <input type="text" id="email">
+        </td>
+      </tr>
+      <tr>
+        <td>Salary:</td>
+        <td>
+          <input type="text" id="salary">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button id="add">Add</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
