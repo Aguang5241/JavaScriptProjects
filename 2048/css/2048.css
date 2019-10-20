@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+.boxes {
+  margin: 10px auto;
+  width: 408px;
+  height: 408px;
+  background-color: burlywood;
+}
+.box {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #eee;
+  font: 50px/100px bold;
+  color: #333;
+}
+/* .controls {
+  margin: 0 auto;
+  width: 200px;
+}
+table {
+  background-color: #eee;
+  width: 100%;
+}
+td {
+  font-size: 50px;
+  color: #333;
+  text-shadow: 2px 2px 2px #000;
+}
+td:hover {
+  color: #000;
+  text-shadow: 1px 1px 1px #000;
+} */
