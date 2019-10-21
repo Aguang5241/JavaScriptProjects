@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+.outer {
+  width: 600px;
+  margin: 0 auto;
+}
+.box, .show {
+  margin: 10px 0 ;
+  border: 1px solid #333;
+  background-color: #eee;
+}
+.box {
+  height: 300px;
+}
+.show {
+  height: 30px;
+}
+#spot {
+  position: absolute;
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  /* transition: all 0.3s; */
+}
+#lineX {
+  position: absolute;
+  width: 600px;
+  height: 1px;
+  background-color: #333;
+}
+#lineY {
+  position: absolute;
+  width: 1px;
+  height: 300px;
+  background-color: #333;
+}
