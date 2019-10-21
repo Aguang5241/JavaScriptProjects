@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+.ball {
+  position: relative;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+}
+.ball1 {
+  background-color: #f10e0e;
+  transition: 0.05s;
+}
+.ball2 {
+  background-color: #e68f0e;
+  transition: 0.06s;
+}
+.ball3 {
+  background-color: #e7d910;
+  transition: 0.08s;
+}
+.ball4 {
+  background-color: #42e610;
+  transition: 0.11s;
+}
+.ball5 {
+  background-color: #15e29e;
+  transition: 0.15s;
+}
+.ball6 {
+  background-color: #136ee6;
+  transition: 0.2s;
+}
+.ball7 {
+  background-color: #f10e0e;
+  transition: 0.26s;
+}
+.ball8 {
+  background-color: #e68f0e;
+  transition: 0.33s;
+}
+.ball9 {
+  background-color: #e7d910;
+  transition: 0.41s;
+}
+.ball10 {
+  background-color: #42e610;
+  transition: 0.5s;
+}
+.ball11 {
+  background-color: #15e29e;
+  transition: 0.6s;
+}
+.ball12 {
+  background-color: #136ee6;
+  transition: 0.71s;
+}

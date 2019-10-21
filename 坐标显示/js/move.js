@@ -8,6 +8,7 @@ window.onload = function() {
   var y;
   box.onmousemove = function(event) {
     // console.log(event)
+    event = event || window.event; // 处理兼容性问题
     x = event.clientX;
     y = event.clientY;
     show.innerHTML = "坐标：(" + x + "," + y + ")";
