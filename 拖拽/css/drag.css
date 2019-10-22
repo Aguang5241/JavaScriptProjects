@@ -1,0 +1,20 @@
+#box1, #box2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+#box1 {
+  background-color: burlywood;
+}
+#box2 {
+  background-color: chocolate;
+  left: 150px;
+}
+img {
+  position: absolute;
+  left: 300px;
+  width: 150px;
+  height: 100px;
+}
