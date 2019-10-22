@@ -1,0 +1,10 @@
+body {
+  height: 1000px;
+  text-align: center;
+}
+#box {
+  margin: 0 auto;
+  width: 500px;
+  height: 100px;
+  background-color: #007abc;
+}
