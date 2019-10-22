@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+.box {
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid #333;
+  background-color: #399c30;
+  box-shadow: 1px 1px 10px #333;
+}
+.outer {
+  border: 1px solid #fff;
+  background-color: #eee;
+}
