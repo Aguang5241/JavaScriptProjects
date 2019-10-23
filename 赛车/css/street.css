@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+#bg {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  background: url(../img/racing.png) repeat-y;
+}
+.box, #mybox {
+  position: absolute;
+  width: 45px;
+  height: 60px;
+  background-color: #333;
+}
+#mybox {
+  background-color: red;
+}
