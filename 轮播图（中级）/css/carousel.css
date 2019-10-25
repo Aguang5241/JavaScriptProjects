@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#carousel {
+  position: relative;
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 620px;
+  height: 400px;
+  background-color: #eee;
+  overflow: hidden;
+}
+#pic {
+  position: absolute;
+  list-style: none;
+}
+#pic li {
+  float: left;
+  margin: 0 10px;
+}
+#nav {
+  position: absolute;
+  bottom: 25px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#nav a {
+  float: left;
+  margin: 0 10px;
+  width: 30px;
+  height: 10px;
+  background-color: #666;
+}
+#nav a:hover {
+  background-color: #000;
+}

@@ -1,5 +1,14 @@
 # JavaScriptProjects
-some projects of  javascript
+*addNewProject.py文件能够自动在当前位置生成基础的网页文件目录*  
+```javascript
+> ./   
+> -> index.html   
+> -> img/   
+> -> css/   
+> ------> filename.css  
+> -> js/  
+> ------> filename.js
+```
 ***
 ## 切换图片
 > 利用js实现以下功能：
@@ -52,6 +61,15 @@ some projects of  javascript
 > 利用js实现以下功能：
 > * 点击start按钮自动开始轮播图片
 > * 点击end按钮暂停轮播图片
+## 轮播图（中级）
+> 利用js实现以下功能：
+> * 自动轮播图片
+> * 通过导航点定位图片
 ## 钟摆
 > 利用js实现以下动画效果：
 > * 小球在指定范围内做钟摆运动
+## 移动函数
+> 定义一个移动对象的的函数，接收参数：
+> * obj - 所要移动的对象
+> * target - 目标坐标
+> * speed - 运动速度
