@@ -13,6 +13,7 @@
 }
 #pic {
   position: absolute;
+  left: 0;
   list-style: none;
 }
 #pic li {

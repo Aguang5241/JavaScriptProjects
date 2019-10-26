@@ -13,13 +13,9 @@ window.onload = function () {
   // 定义改变a标签样式的函数
   function setA() {
     for (var i = 0; i < allA.length; i++) {
-      if (index == pics.length - 1) {
-        index = 0;
-        pic.style.left = '0'; // ？？？？？？
-      };
       allA[i].style.backgroundColor = ''; // 设置空字符串，避免hover属性失效
       allA[index].style.backgroundColor = '#000';
-    }
+    };
   };
   // obj - 所要移动的对象
   // target - 目标坐标
@@ -42,7 +38,7 @@ window.onload = function () {
       }
       obj.style.left = newValue + 'px';
     }, 20)
-    
+
   };
   // 1.自动轮播
   autoChange();
@@ -50,11 +46,12 @@ window.onload = function () {
     setInterval(function () {
       index++;
       index %= pics.length;
-      // // var currentPosition = pic.offsetLeft;
-      // // if (currentPosition == -(pics.length - 1) * carouselW) {
-      // //   currentPosition = 0;
-      // // }
-      moveX(pic, -index * carouselW, 50, function() {
+      var currentPosition = pic.offsetLeft;
+      if (currentPosition == -(pics.length - 2) * carouselW) {
+        pic.style.left = 0;
+        index = 0;
+      };
+      moveX(pic, -index * carouselW, 50, function () {
         setA();
       });
     }, 3000)
@@ -65,10 +62,10 @@ window.onload = function () {
     allA[i].num = i;
     allA[i].onclick = function () {
       index = this.num;
-      moveX(pic, -index * carouselW, 20, function () {
-        
-      });
       setA();
+      moveX(pic, -index * carouselW, 20, function () {
+
+      });
     }
   }
 }
