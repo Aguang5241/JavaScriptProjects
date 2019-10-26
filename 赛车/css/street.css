@@ -5,18 +5,41 @@
 body {
   text-align: center;
 }
+#background {
+  margin: 0 auto;
+  width: 1000px;
+  background: url(../img/bg.jpg) no-repeat #5f5762;
+  background-position: center;
+  border-radius: 50px;
+}
+#band {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 300px;
+  height: 100px;
+  background-color: #333;
+  border-radius: 15px;
+  font-size: 25px;
+  line-height: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #fff;
+}
 #bg {
   position: relative;
-  margin: 0 auto;
+  margin: 0px auto;
   width: 320px;
   background: url(../img/racing.png) repeat-y;
+  opacity: 0.98;
 }
 .box, #mybox {
   position: absolute;
   width: 45px;
   height: 60px;
   background-color: #333;
+  /* opacity: 1; */
 }
 #mybox {
-  background-color: red;
+  /* background-color: red; */
+  background: url(../img/mycar.png);
 }
