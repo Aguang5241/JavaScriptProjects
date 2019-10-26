@@ -3,11 +3,13 @@ window.onload = function () {
   // 捕获背景（父元素）
   var bg = this.document.getElementById('bg');
   var background = this.document.getElementById('background');
+  var bgImg = this.document.getElementById('bgImg');
   // 获取屏幕高度,赋予背景
   var h = this.document.documentElement.clientHeight / 1.25;
   var w = bg.clientWidth;
   var carsBg = ['url(../img/block1.png)'];
   bg.style.height = h + 'px';
+  bgImg.style.top = -(bgImg.clientHeight - h + 10) + 'px';
   background.style.height = document.documentElement.clientHeight + 'px';
   var score = this.document.getElementById('score');
   var timeLast = this.document.getElementById('timeLast');
@@ -60,15 +62,31 @@ window.onload = function () {
     createBox(); // 生成第1辆
     createBox(); // 生成第2辆
     createBox(); // 生成第3辆
-  }
+  };
   var timer = setInterval(add, intervalTime);
+  // 设置移动背景
+  movebg();
+  function movebg() {
+    var timerS = setInterval(moveStreet, time);
+    function moveStreet() {
+      var pos = bgImg.offsetTop;
+      pos += deltaX;
+      if (pos > 0) {
+        bgImg.style.top = -(bgImg.clientHeight - h) + 'px';
+      } else {
+        clearInterval(timerS);
+        bgImg.style.top = pos + 'px';
+        timerS = setInterval(moveStreet, time);
+      }
+    }
+  }
   // 使得每个box运动起来
   var deltaX = 1;
   var time = 5;
   var scoreNum = 0;
   function moveBox(obj) {
+    // bgImg.style.top = -(bgImg.clientHeight - h) + 'px';
     deltaX += 0.01; // 加速度运动
-    // console.log(deltaX)
     var pos = 0;
     var id = setInterval(move, time);
     function move() {
@@ -90,7 +108,8 @@ window.onload = function () {
             window.location.reload();
           }
         }
-      }
+      };
+      // bgImg.style.top = -(bgImg.clientHeight - h) + pos + 'px';
     }
   };
   // 加入自定义小车

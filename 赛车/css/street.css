@@ -25,11 +25,16 @@ body {
   font-weight: bold;
   color: #fff;
 }
+#bgImg {
+  position: relative;
+}
 #bg {
   position: relative;
   margin: 0px auto;
   width: 320px;
-  background: url(../img/racing.png) repeat-y;
+  background-color: #5d7182;
+  overflow: hidden;
+  /* background: url(../img/racing.png) repeat-y; */
   opacity: 0.98;
 }
 .box, #mybox {
