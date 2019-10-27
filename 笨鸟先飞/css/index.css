@@ -1,0 +1,40 @@
+body {
+  background-color: #deb887 ;
+}
+#bg {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 30px;
+  width: 400px;
+  height: 200px;
+  background-color: #666;
+  border-radius: 30px;
+  text-align: center;
+  color: #eee;
+}
+p {
+  margin: 0 auto;
+  width: 250px;
+}
+#header {
+  font-size: 30px;
+  font-weight: bold;
+}
+#rules b {
+  color: yellow;
+}
+a {
+  text-decoration: none;
+  color: #e5ff00;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #333;
+  transition: 0.3s;
+}
+a:hover {
+  color: #e9da84;
+}
+a:active {
+  box-shadow: 1px 1px 5px #333;
+}
