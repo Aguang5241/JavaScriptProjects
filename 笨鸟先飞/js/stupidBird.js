@@ -163,6 +163,9 @@ window.onload = function () {
   // 定义结束函数
   function gameEnd() {
     var str;
+    clearInterval(survivalTimer);
+    clearInterval(flyTimer);
+    clearInterval(addTimer);
     str = '游戏结束!!!\n最终得分：' + scoreValue + '\n最长存活时间：' + timeValue + 's\n点击确定重新开始';
     alert(str);
     window.location.assign('index.html');
